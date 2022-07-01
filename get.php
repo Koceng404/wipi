@@ -5,23 +5,24 @@ date_default_timezone_set("Asia/JAKARTA");
 // ACAK Voucher Sesuai Format == Lanjut Besok
 
 
-for ($i= 1; $i <= 10000; $i++)
+for ($i= 1; $i <= 1; $i++)
 {
 
 $url       = 'http://giyatsamedia.com/login';
-$headers   = array(
-'POST /login HTTP/1.1';
-'Host: giyatsamedia.com';
-'Connection: keep-alive';
 
-'Cache-Control: max-age=0';
+$headers   = array(
+'POST /login HTTP/1.1',
+'Host: giyatsamedia.com',
+'Connection: keep-alive',
+
+'Cache-Control: max-age=0',
 'Origin: http://giyatsamedia.com';
-'Upgrade-Insecure-Requests: 1';
-'Content-Type: application/x-www-form-urlencoded';
+'Upgrade-Insecure-Requests: 1',
+'Content-Type: application/x-www-form-urlencoded',
 'User-Agent: Mozilla/5.0 (Linux; Android 8.1.0; 2014812) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.152 Mobile Safari/537.36';
-'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8';
-'Referer: http://giyatsamedia.com/login';
-'Accept-Encoding: gzip, deflate
+'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+'Referer: http://giyatsamedia.com/login',
+'Accept-Encoding: gzip, deflate';
 'Accept-Language: id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7',);
 
 
