@@ -1,18 +1,19 @@
-# Tutorial
+# caranya?
+pastikan terkoneksi dengan desadigital.net <br>
 
-~ install Termux, 
-~ install php pada termux dengan code
- pkg update
- pkg upgrade
- pkg install php
- pkg install git
+~ install Termux, <br>
+~ install php pada termux dengan code <br>
+ pkg update<br>
+ pkg upgrade <br>
+ pkg install php <br>
+ pkg install git <br>
  
-klik y aja jika ada pilihan.
+klik y aja jika ada pilihan. <br>
 
-~ kemudian ketik
-git clone https://github.com/koceng404/wipi
-~ cd wipi
-~ php get.php
+~ kemudian ketik <br>
+git clone https://github.com/koceng404/wipi <br>
+~ cd wipi <br>
+~ php get.php <br>
 
 System akan melakukan Acak Voucher dan kemudian dicoba untuk login sendiri.
 
